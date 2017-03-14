@@ -223,6 +223,22 @@
     <Compile Include="Migrations\201703051342089_UpdateConditiontoRequiredOnNameColumn.Designer.cs">
       <DependentUpon>201703051342089_UpdateConditiontoRequiredOnNameColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703141203397_ChangeCoulmnNameToDiscountRate.cs" />
+    <Compile Include="Migrations\201703141203397_ChangeCoulmnNameToDiscountRate.Designer.cs">
+      <DependentUpon>201703141203397_ChangeCoulmnNameToDiscountRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703141844566_DropNameFromMembershipType.cs" />
+    <Compile Include="Migrations\201703141844566_DropNameFromMembershipType.Designer.cs">
+      <DependentUpon>201703141844566_DropNameFromMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703141853147_AddNameColumnToMembershipType.cs" />
+    <Compile Include="Migrations\201703141853147_AddNameColumnToMembershipType.Designer.cs">
+      <DependentUpon>201703141853147_AddNameColumnToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703142057017_AddBirthdayToCustomer.cs" />
+    <Compile Include="Migrations\201703142057017_AddBirthdayToCustomer.Designer.cs">
+      <DependentUpon>201703142057017_AddBirthdayToCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -327,6 +343,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703051342089_UpdateConditiontoRequiredOnNameColumn.resx">
       <DependentUpon>201703051342089_UpdateConditiontoRequiredOnNameColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703141203397_ChangeCoulmnNameToDiscountRate.resx">
+      <DependentUpon>201703141203397_ChangeCoulmnNameToDiscountRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703141844566_DropNameFromMembershipType.resx">
+      <DependentUpon>201703141844566_DropNameFromMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703141853147_AddNameColumnToMembershipType.resx">
+      <DependentUpon>201703141853147_AddNameColumnToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703142057017_AddBirthdayToCustomer.resx">
+      <DependentUpon>201703142057017_AddBirthdayToCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
