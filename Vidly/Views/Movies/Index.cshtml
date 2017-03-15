@@ -8,13 +8,35 @@
     <h3>No movies found!</h3>
 }
 <table class="table table-bordered table-hover">
-    <tr><th><h3>Movie</h3></th></tr>
-    @foreach (var movie in Model)
-    {
-        <tr id="MovieRow" >
-            <td>
-                <h3>@Html.DisplayFor(modelItem => movie.Name)</h3>
-            </td>
+    <thead>
+        <tr>
+            <th>Movie</th>
+            <th>Genre</th>
+            <th>Release Date</th>
+            <th>Available From</th>
+            <th>Number In Stock</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr id="MovieRow">
+                <td>
+                    @Html.ActionLink(movie.Name, "Details", new { Id = movie.Id })
+                </td>
+                <td>
+                    @movie.Genre.Name
+                </td>
+                <td>
+                    @movie.ReleaseDate.ToShortDateString()
+                </td>
+                <td>
+                    @movie.AvailableFrom.ToShortDateString()
+                </td>
+                <td>
+                    @movie.NumberInStock
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
